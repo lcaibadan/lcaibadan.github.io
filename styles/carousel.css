@@ -1,0 +1,100 @@
+#first-section{
+  height: 626px;
+  position: relative;
+}
+
+.section{
+  height: 626px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  background-size: cover;
+  background-position: 50%;
+  transition: opacity 300ms ease-in;
+}
+
+@keyframes animateCarousel{
+  from{
+      transform: translateX(0%);
+  }
+
+  to{
+      transform: translateX(100%);
+  }
+}
+
+#first-section-carousel{
+  background-image: url('../images/church_1.jpg');
+  /* display: flex; */
+  position: relative;
+  z-index: 5;
+}
+
+#second-section-carousel{
+  background-image: url('../images/church_2.jpg');
+  position: relative;
+  top: -626px;
+  z-index: 4;
+}
+
+#third-section-carousel{
+  background-image: url('../images/church_3.jpg');
+  position: relative;
+  top: -1252px;
+  z-index: 3;
+}
+
+#fourth-section-carousel{
+  background-image: url('../images/church_4.jpg');
+  position: relative;
+  top: -1878px;
+  z-index: 2;
+}
+
+#fifth-section-carousel{
+  background-image: url('../images/church_5.jpg');
+  position: relative;
+  top: -2504px;
+  z-index: 1;
+}
+
+.empty{
+  flex-basis: 85%;
+}
+
+.first-section-text{
+  flex-basis: 50%;
+  color: white;
+  padding: 2%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+}
+
+@media only screen and (min-width: 992px){
+  #second-section-carousel{
+    background-image: url('../images/church_2.jpg');
+  }
+
+  #fourth-section-carousel{
+    background-image: url('../images/church_4.jpg');
+  }
+
+  #fifth-section-carousel{
+    background-image: url('../images/church_5.jpg');
+  }
+
+  .section{
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .empty{
+    flex-basis: 50%;
+  }
+
+  .first-section-text{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+  }
+}

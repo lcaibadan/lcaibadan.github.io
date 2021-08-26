@@ -1,0 +1,73 @@
+html{
+  scroll-behavior: smooth;
+}
+
+:root{
+  --main-bg-color: rgb(250, 250, 250);
+  --nav-bg-color: rgb(222, 16, 123);
+  --dark-bg-color: rgb(222, 16, 123);
+  --light-bg-color: rgb(252, 240, 246);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+@font-face{
+  font-family: 'Sailec Light';
+  src: url('../fonts/Sailec-Light.woff') format('woff');
+}
+
+@font-face{
+  font-family: 'Sofia Pro';
+  src: url('../fonts/Sofia-Pro-Regular-Az.otf') format('otf');
+}
+
+a{
+  font-family: 'Sailec Light', 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+p{
+  margin: 0;
+  font-family: 'Sailec Light', 'Lato', sans-serif;
+}
+
+#o1{
+  color: var(--nav-bg-color);
+}
+
+#o2{
+  color: rgb(0, 130, 180);
+}
+
+#l{
+  color: rgb(204, 204, 102);
+}
+
+#a{
+  color: rgb(77, 233, 248);
+}
+
+.centered-text{
+  text-align: center;
+  margin: 0;
+}
+
+.full-width{
+  width: 100%;
+}
+
+button{
+  border: none;
+}

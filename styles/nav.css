@@ -1,0 +1,115 @@
+nav{
+  width: inherit;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 16px 5% 16px 2%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+img#dropdown-button{
+  transition: transform 500ms ease;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 300ms ease, color 200ms ease;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+a:hover, .tag:hover{
+  color: rgb(204, 204, 102);
+}
+
+a.nav-link:hover{
+  background-color: white;
+  border-radius: 2px;
+  color: var(--nav-bg-color);
+}
+
+.styled-links:hover{
+  color: white;
+  background-color: rgb(0, 130, 180);
+}
+
+a:active, .tag:active{
+  color: rgb(204, 204, 102);
+}
+
+.nav-brand{
+  display: flex;
+  width: inherit;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 20px;
+}
+
+.nav-links{
+  width: inherit;
+  display: none;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.nav-links-animationClass{
+  animation: 500ms ease-in 1 alternate navDropDown;
+}
+
+.nav-link{
+  padding: 16px;
+  color: white;
+  text-decoration: none;
+  /* font-size: 24px; */
+}
+
+div.nav-link-container{
+  width: 100%;
+}
+
+a.nav-link{
+  width: 100%;
+  padding: 8px 8px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@keyframes navDropDown{
+  from{
+    transform: translateY(-20%);
+    opacity: 0.4;
+  }
+
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 992px){
+   nav{
+      flex-flow: row nowrap;
+      justify-content: space-between;
+  }
+
+  img#dropdown-button{
+      display: none;
+  }
+
+  .nav-links{
+      display: flex;
+      flex-flow: row nowrap;
+      flex-basis: 50%;
+      animation: none;
+  }
+
+  a.nav-link{
+      width: auto;
+  }
+}
