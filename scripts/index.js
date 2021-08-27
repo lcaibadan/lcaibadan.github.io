@@ -32,8 +32,8 @@ setInterval(() => {
 //change animation direction based on if the dialog window is open
 function changeAnimation(element, animationName) {
   // element.style.animation = `300ms ease-out 1 reverse ${animationName}`;
-  element.style.animation = isOpen ? `300ms ease-out 1 reverse ${animationName}`
-    : `300ms ease-in 1 normal ${animationName}`;
+  element.style.animation = isOpen ? `900ms ease-out 1 reverse ${animationName}`
+    : `900ms ease-in 1 normal ${animationName}`;
 }
 
 //cleear the animation when it's ended or canceled
