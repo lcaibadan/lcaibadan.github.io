@@ -27,7 +27,7 @@ setInterval(() => {
       sections[i].style.opacity = "1";
     }
   }
-}, 9000);
+}, 6000);
 
 //change animation direction based on if the dialog window is open
 function changeAnimation(element, animationName) {
