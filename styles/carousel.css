@@ -12,7 +12,7 @@
   background-color: black;
   background-size: cover;
   background-position: 50%;
-  transition: opacity 300ms ease-in;
+  transition: opacity 900ms ease-in;
 }
 
 @keyframes animateCarousel{
