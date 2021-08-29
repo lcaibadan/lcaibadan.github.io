@@ -25,7 +25,7 @@ a:hover, .tag:hover{
   color: rgb(204, 204, 102);
 }
 
-a.nav-link:hover{
+a.nav-link:hover:not(.selected-page), a.selected-page{
   background-color: white;
   border-radius: 2px;
   color: var(--nav-bg-color);
