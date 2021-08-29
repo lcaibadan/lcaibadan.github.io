@@ -9,10 +9,10 @@ let isOpen = false;
 const orderButtons = document.getElementsByClassName("agboola-category-description-contact");
 const dialogWindows = document.getElementsByClassName("agboola-category-dialog");
 // const isOpenArray = new Array(orderButtons.length).fill(false, 0, orderButtons.length);
-// dialogWindow.style.animation = "300ms ease-in 1 normal fadeUp;";
+// dialogWindow.style.animation = "900ms ease-in 1 normal fadeUp;";
 
 const dialogWindowSubContainers = document.getElementsByClassName("agboola-category-dialog-subcontainer");
-// dialogWindowSubContainer.style.animation = "300ms ease-in 1 normal slideUp";
+// dialogWindowSubContainer.style.animation = "900ms ease-in 1 normal slideUp";
 
 const closeDialogButtons = document.getElementsByClassName("agboola-category-dialog-close");
 
@@ -27,13 +27,13 @@ setInterval(() => {
       sections[i].style.opacity = "1";
     }
   }
-}, 9000);
+}, 6000);
 
 //change animation direction based on if the dialog window is open
 function changeAnimation(element, animationName) {
-  // element.style.animation = `300ms ease-out 1 reverse ${animationName}`;
-  element.style.animation = isOpen ? `300ms ease-out 1 reverse ${animationName}`
-    : `300ms ease-in 1 normal ${animationName}`;
+  // element.style.animation = `900ms ease-out 1 reverse ${animationName}`;
+  element.style.animation = isOpen ? `900ms ease-out 1 reverse ${animationName}`
+    : `900ms ease-in 1 normal ${animationName}`;
 }
 
 //cleear the animation when it's ended or canceled
