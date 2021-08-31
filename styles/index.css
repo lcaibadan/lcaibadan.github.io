@@ -52,6 +52,10 @@ iframe{
   height: 80vmin;
 }
 
+p.agboola-service-name{
+  color: white;
+}
+
 .agboola-category-dialog{
   display: none;
   width: 100%;
