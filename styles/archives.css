@@ -43,11 +43,11 @@
 }
 
 .archive:nth-child(odd) > .service{
-  background-image: url('../images/church_1.jpg');
+  background: transparent;
 }
 
 .archive:nth-child(even) > .service{
-  background-image: url('../images/church_2.jpg');
+  background: transparent;
 }
 
 @keyframes changeBackground{
