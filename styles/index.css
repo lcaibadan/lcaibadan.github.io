@@ -1,5 +1,10 @@
 .agboola-home-tush{
   background-color: rgb(28, 28, 28);
+  animation: 1s ease-in 1 fadeUp;
+}
+
+.agboola-home-tush{
+  display: none;
 }
 
 .agboola-category-image-container{
@@ -39,6 +44,49 @@ button.agboola-category-description-contact{
   width: 100%;
   padding: 16px 0;
   /* margin: 8px 0; */
+}
+
+input{
+  width: 100%;
+  padding: 16px 24px;
+  color: white;
+  letter-spacing: 0.5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+.lcaibadan-auth{
+  background-color: rgb(16, 16, 16);
+}
+
+.lcaibadan-auth-column{
+  height: 75vh;
+  position: relative;
+}
+
+.agboola-category-description-container.lcaibadan-auth-container{
+  height: fit-content;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+  transform: none;
+}
+
+button.lcaibadan-auth-submit{
+  border: 1px solid var(--nav-bg-color);
+  background-color: rgba(8, 8, 8, 0.8);
+  transition: background-color 200ms ease-in;
+  animation: 1s ease-in-out infinite alternate none running none;
+}
+
+button.lcaibadan-auth-submit:disabled:hover{
+  cursor: not-allowed;
+}
+
+button.lcaibadan-auth-submit:hover{
+  background-color: var(--nav-bg-color);
 }
 
 hr{
@@ -102,6 +150,67 @@ p.agboola-service-name{
 
 .agboola-category-contact-icons{
   font-size: 36px;
+}
+
+.lcaibadan-notification{
+  display: none;
+  position: fixed;
+  bottom: 32px;
+  margin: auto;
+  z-index: 8;
+  animation: 500ms ease-in slideUp 1;
+}
+
+div.lcaibadan-feedback{
+  width: 100%;
+  height: max-content;
+  overflow: auto;
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(0, 0, 0, 0.95);
+  font-size: 12pt;
+  border-radius: 8px;
+  box-shadow: 4px 4px 24px 4px rgba(0, 0, 0, 0.4);
+}
+
+div.lcaibadan-feedback-info{
+  display: inline-block;
+  height: 100%;
+  padding: 16px;
+}
+
+div.lcaibadan-feedback-info > p{
+  display: inline-block;
+  width: auto;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+button.lcaibadan-feedback-dismiss{
+  text-transform: uppercase;
+  /* font-size: 9.5pt; */
+  float: right;
+  padding: 16px;
+  color: white;
+  background-color: rgba(32, 32, 32, 0.8);
+  /* line-height: 100%; */
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: color 250ms ease-in, background-color 250ms ease-in;
+}
+
+button.lcaibadan-feedback-dismiss:hover{
+  background-color: var(--nav-bg-color);
+}
+
+@keyframes blinkingButton{
+  from{
+    background-color: black;
+  }
+
+  to{
+    background-color: var(--nav-bg-color);
+  }
 }
 
 @keyframes fadeUp{

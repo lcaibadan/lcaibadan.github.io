@@ -19,6 +19,10 @@ body{
   margin: 0px;
 }
 
+main{
+  background-color: black;
+}
+
 @font-face{
   font-family: 'Sailec Light';
   src: url('../fonts/Sailec-Light.woff') format('woff');
